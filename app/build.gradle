@@ -1,10 +1,27 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+
+    dependencies {
+        // classpath("com.android.tools:api:8.2.42")
+
+        classpath 'com.android.tools.build:gradle:8.0.2'
+        //classpath("com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.1")
+    }
+}
  plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
 
-android {
+
+
+
+ android {
     namespace 'com.library.sizedp'
     compileSdk 33
 
@@ -24,6 +41,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }*/
+    }
+
+    java{
+        toolchain{
+            languageVersion=JavaLanguageVersion.of(17)
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -69,3 +92,19 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 }
+ // 5. Publishing:
+ publishing {
+     publications {
+         maven(MavenPublication) {
+             groupId = 'com.github.arvindshishodia'
+             artifactId = 'sizeindeplib'
+             version = "1.0"
+             pom {
+                 description = 'First Android library'
+             }
+         }
+     }
+     repositories {               // << --- ADD This
+         mavenLocal()
+     }
+ }
