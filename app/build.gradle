@@ -1,14 +1,14 @@
 buildscript {
     repositories {
         google()
-        mavenCentral()
+        //mavenCentral()
 
     }
 
     dependencies {
-        // classpath("com.android.tools:api:8.2.42")
+        // classpath("com.android.tools:api:8.2.2")
 
-        classpath 'com.android.tools.build:gradle:8.0.2'
+        classpath ("com.android.tools.build:gradle:8.2.2")
         //classpath("com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.1")
     }
 }
@@ -87,7 +87,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
+    //androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
