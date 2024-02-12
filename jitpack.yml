@@ -4,5 +4,5 @@ jdk:
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
-  - FILE="-Dfile=app-debug.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.arvindshishodia -DartifactId=sizeindeplib -Dversion=1.0 -Dpackaging=aar -DgeneratePom=true
+  - FILE="-Dfile=app-release.aar"
+  - mvn install:install-file $FILE -DgroupId=com.github.arvindshishodia -DartifactId=sizeindeplib -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true

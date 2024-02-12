@@ -8,7 +8,7 @@ buildscript {
     dependencies {
         // classpath("com.android.tools:api:8.2.2")
 
-        classpath ("com.android.tools.build:gradle:8.2.2")
+   //     classpath ("com.android.tools.build:gradle:8.2.2")
         //classpath("com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.1")
     }
 }
@@ -98,7 +98,7 @@ dependencies {
          maven(MavenPublication) {
              groupId = 'com.github.arvindshishodia'
              artifactId = 'sizeindeplib'
-             version = "1.0"
+             version = "1.0.0"
              pom {
                  description = 'First Android library'
              }
