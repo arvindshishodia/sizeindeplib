@@ -98,7 +98,7 @@ dependencies {
          maven(MavenPublication) {
              groupId = 'com.github.arvindshishodia'
              artifactId = 'sizeindeplib'
-             version = "1.0.0"
+             version = "1.0.7"
              pom {
                  description = 'First Android library'
              }
