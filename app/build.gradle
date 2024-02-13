@@ -105,6 +105,6 @@ dependencies {
          }
      }
      repositories {               // << --- ADD This
-         mavenLocal()
+         mavenCentral()
      }
  }
