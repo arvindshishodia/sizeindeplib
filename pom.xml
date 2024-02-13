@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.arvindshishodia</groupId>
     <artifactId>sizeindeplib</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <packaging>pom</packaging>
     <description>First Android library</description>
     <dependencies>
@@ -16,3 +15,5 @@
         </dependency>
     </dependencies>
 </project>
+    <!--xsi:schemaLocation="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
