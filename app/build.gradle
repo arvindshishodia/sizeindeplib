@@ -72,7 +72,7 @@ dependencies {
     api('com.intuit.sdp:sdp-android:1.0.6'){
         transitive(true)
     }
-    api('com.squareup.retrofit2:retrofit:2.9.0'){
+    implementation('com.squareup.retrofit2:retrofit:2.9.0'){
         transitive(true)
     }
 
@@ -102,9 +102,26 @@ dependencies {
          maven(MavenPublication) {
              groupId = 'com.github.arvindshishodia'
              artifactId = 'sizeindeplib'
-             version = "1.0.9"
+             version = "1.0.10"
              pom {
-                 description = 'First Android library'
+                 // Set the pom.xml metadata
+                 name = "Your Library Name"
+                 description = "Description of your library"
+                 url = "https://jitpack.io"
+
+                 licenses {
+                     license {
+                         name = 'The Apache License, Version 2.0'
+                         url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+                     }
+                 }
+                 developers {
+                     developer {
+                         id = 'Arvind.shishodia15@gmail.com'
+                         name = 'Arvind'
+                         email = 'Arvind.shishodia15@gmail.com'
+                     }
+                 }
              }
          }
      }
